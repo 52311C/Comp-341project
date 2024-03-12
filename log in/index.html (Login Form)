@@ -129,12 +129,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
   <form>
     <h3>Login</h3>
 
-    <label for="username">Username</label>
-    <input type="text" placeholder="Enter your username">
+    <label for="StaffID">Staff ID</label>
+    <input type="text" placeholder="Enter your Staff ID">
 
     <label for="password">Password</label>
-    <input type="password" placeholderb="Enter your password"><br><br>
-    <p>Don't have an account? <a href="http://localhost:8081/WebApplication2/">Sign Up</a>
+    <input type="password" placeholder="Enter your password"><br><br>
+    <p>Don't have an account? <a href="http://localhost:8080/WebApplication1/">Sign Up</a>
     <button>Log In</button>
   </form>
 </body>
