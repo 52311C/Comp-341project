@@ -23,11 +23,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
             .background {
               width: 430px;
-              height: 800px;
+              height: 950px;
               position: absolute;
               transform: translate(-50%, -50%);
               left: 50%;
-              top: 69%;
+              top: 80%;
             }
 
             .background .shape {
@@ -53,12 +53,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             }
 
             form {
-              height: 800px;
+              height: 950px;
               width: 450px;
               background-color: rgba(255, 255, 255, 0.13);
               position: absolute;
               transform: translate(-50%, -50%);
-              top: 69%;
+              top: 82%;
               left: 50%;
               border-radius: 10px;
               backdrop-filter: blur(10px);
@@ -129,7 +129,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     </div>
     <body>
         <div class="center">
-                <form action="signup.jsp" method="post">
+                <form action="SignupServlet" method="post">
                     <h3>Sign Up</h3>
                     <p>
                         Staff ID: <br>
@@ -137,13 +137,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         Staff Name: <br>
                         <input type="text" name="StaffName"><br><br>
                         Email: <br>
-                        <input type="email" name="email"><br><br>
+                        <input type="email" name="Email"><br><br>
                         Phone Number: <br>
-                        <input type="tel" name="phoneNumber"><br><br>
+                        <input type="tel" name="PhoneNumber"><br><br>
                         Department: <br>
-                        <input type="text" name="department"><br><br>
+                        <input type="text" name="Department"><br><br>
+                        Password: <br>
+                        <input type="password" name="Password"> <br> <br>
                         <button>Sign Up</button> <br><br>
-                        Already have an account?<a href="http://localhost:8081/WebApplication3/">Login</a>
+                        Already have an account?<a href="http://localhost:8080/WebApplication2/">Login</a>
                     </p>
                 </form>
          </div>
