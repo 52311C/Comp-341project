@@ -38,16 +38,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             }
 
             .shape:first-child {
-              background: linear-gradient(#1845ad,
-                  #23a2f6);
+              background: linear-gradient(#50C878,
+                  #228B22);
               left: -80px;
               top: -100px;
             }
 
             .shape:last-child {
               background: linear-gradient(to right,
-                  #ff512f,
-                  #f09819);
+                  #B2BEB5,
+                  #A9A9A9);
               right: -70px;
               bottom: -80px;
             }
