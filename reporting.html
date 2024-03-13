@@ -3,12 +3,11 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
-<html>
+
     <head>
-        <title>Incident Reporting Page</title>
+        <title>Estates Department Repair Reporting</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         
         <style media = "all">
           *,
             *:before,
@@ -19,65 +18,59 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             }
 
             body {
-              background-color: #080710;
-            }
-            h2{
-                font-size: 30px;
-                color: #ffffff;
-                padding-top: 20px;
-                align-items: center;
-     
+              background-color: #bcbec0;
             }
 
             .background {
               width: 430px;
-              height: 600px;
+              height: 950px;
               position: absolute;
               transform: translate(-50%, -50%);
               left: 50%;
-              top: 69%;
+              top: 90%;
             }
 
             .background .shape {
-              height: 200px;
-              width: 200px;
+              height: 300px;
+              width: 300px;
               position: absolute;
               border-radius: 50%;
             }
 
             .shape:first-child {
-              background: linear-gradient(#50C878,
-                  #228B22);
-              left: -80px;
-              top: -100px;
+              background: linear-gradient(#00a651,
+                  #66ca97);
+              left: -350px;
+              top: -180px;
             }
 
             .shape:last-child {
               background: linear-gradient(to right,
-                  #B2BEB5,
-                  #A9A9A9);
-              right: -70px;
+                  #E0181F,
+                  #e95d62);
+              right: -350px;
               bottom: -80px;
             }
 
             form {
-              height: 600px;
-              width: 450px;
-              background-color: rgba(255, 255, 255, 0.13);
+              height: 950px;
+              width: 900px;
+              /*background-color: rgba(255, 255, 255, 0.13);*/
               position: absolute;
               transform: translate(-50%, -50%);
-              top: 49%;
+              top: 80%;
               left: 50%;
               border-radius: 10px;
               backdrop-filter: blur(10px);
               border: 2px solid rgba(255, 255, 255, 0.1);
               box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
               padding: 50px 35px;
+              background-color: #E7ECEB;
             }
-      
+
             form * {
               font-family: 'Poppins', sans-serif;
-              color: #ffffff;
+              color: #080710;;
               letter-spacing: 0.5px;
               outline: none;
               border: none;
@@ -101,7 +94,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
               display: block;
               height: 50px;
               width: 100%;
-              background-color: rgba(255, 255, 255, 0.07);
+              background-color: rgba(255, 255, 255, 0.89);
               border-radius: 3px;
               padding: 0 10px;
               margin-top: 8px;
@@ -129,44 +122,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 margin-top: 30px;
                 height: 100%; 
             }
-        
-            
-            
         </style>
     </head>
+    <div class="background"> 
+    <div class="shape"></div>
+    <div class="shape"></div>
+    </div>
+    
     <body>
-         
-        <form action="AddIncidentServlet" method="post">
-        <table cellspacing="5"  border="0">
-            <h2>Please enter your report here.</h2>
-           
-            <tr>
-                <td>Staff ID :</td>
-                <td><input type="text" name="StaffID"></td>
-            </tr>
-            
-             <tr>
-                <td>Department Name :</td>
-                <td><input type="text" name="department"></td>
-            </tr>
-             <tr>
-                <td>Room Name</td>
-                <td><input type="text" name="room"></td>
-            </tr>
-            <tr>
-                <td>Incident Details :</td>
-                <td><textarea><input type='text' name="incident"</textarea>                           
-                </td>           
-            </tr>
-            <tr>
-                <td>Date</td>
-                <td><input type="date" name="date"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><br><input type="submit" value="Submit"></td>
-            </tr>
-        </table>
-        </form>
+        <div class="center">
+                <form action="incidence.jsp" method="post">
+                    <h3>Report an Incident</h3>
+                    <p>
+                        Incidence ID: <br>
+                        <input type="text" name="IncidenceID"><br><br>
+                        Staff ID: <br>
+                        <input type="text" name="StaffID"><br><br>
+                        Department: <br>
+                        <input type="email" name="Department"><br><br>
+                        Room: <br>
+                        <input type="tel" name="Room"><br><br>
+                        Date: <br>
+                        <input type="date" name="Date"> <br> <br> 
+                        Incident: <br>
+                        <input type="text" name="Incident"> <br> <br> 
+                        <button>Submit</button>
+                        <!--<button>Submit</button> <br><br>
+                        Already have an account?<a href="http://localhost:8080/WebApplication2/">Login</a>-->
+                    </p>
+                </form>
+         </div>
     </body>
 </html>
+
