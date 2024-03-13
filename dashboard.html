@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0; /* Light gray background */
+        color: #000; /* Black text */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        width: 300px; /* Adjust width as needed */
+        padding: 20px;
+        background-color: #fff; /* White container background */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttons a {
+        background-color: #28a745; /* Green color for buttons */
+        color: #fff; /* White text */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 10px; /* Adjust spacing between buttons */
+        text-decoration: none;
+    }
+    
+    .buttons a.active {
+        background-color: #dc3545; /* Red color for active button */
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Repair Report Dashboard</h1>
+        <div class="buttons">
+            <a href="repair_report.html" class="active">Repair Report</a>
+            <a href="reported_incidents.html">View Reported Incidents</a>
+        </div>
+        <div id="bar-chart" class="chart"></div>
+    </div>
+</body>
+</html>
+
